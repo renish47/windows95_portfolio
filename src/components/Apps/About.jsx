@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { badges } from "../../content/badges";
 
-const AboutContent = ({ isMaximized }) => {
+const About = ({ isMaximized }) => {
   const [seeMore, setSeeMore] = useState(false);
   return (
     <div className=" flex flex-col gap-[35px] px-[70px] py-[30px] h-full overflow-y-auto">
@@ -94,4 +94,4 @@ const AboutContent = ({ isMaximized }) => {
   );
 };
 
-export default AboutContent;
+export default About;

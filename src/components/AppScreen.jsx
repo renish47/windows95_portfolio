@@ -2,7 +2,7 @@ import { useContext } from "react";
 import AppScreenFrame from "./AppScreenFrame";
 import { Menu } from "../content/menu";
 import AppContext from "../context/AppContext";
-import AboutContent from "./AppContent/AboutContent.Jsx";
+import About from "./Apps/About";
 
 const AppScreen = () => {
   const { state } = useContext(AppContext);
@@ -17,7 +17,7 @@ const AppScreen = () => {
           isMaximized={state.About.fullscreen}
           isMinimized={state.About.minimize}
         >
-          <AboutContent isMaximized={state.About.fullscreen} />
+          <About isMaximized={state.About.fullscreen} />
         </AppScreenFrame>
       )}
       {state.Projects.open && (
