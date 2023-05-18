@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: MS Sans;
+  src: url(/assets/MS\ Sans\ Serif\ 8pt.ttf);
+}
+
+body {
+  font-family: MS Sans;
+  overflow: hidden;
+}
+
+.BtnClicked {
+  background-position: 50% 50%;
+  background: repeating-conic-gradient(#bdbebd 0 25%, #fff 0 50%) 50%/2px 2px;
+  border-color: #000 #fafafa #fafafa #000;
+  border-radius: 0.5px;
+  border-width: 1px;
+  box-sizing: border-box;
+  outline: 1px solid red;
+  border-style: solid;
+}
+
+.appMaximized {
+  transform: translateX(0) translateY(0) !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 35px);
+}
+
+.appContentHeightInMin {
+  height: calc(100% - 36px);
+  margin: 1px 0;
+}
+
+.appContentHeightInMax {
+  height: calc(100% - 34px);
+}
