@@ -72,9 +72,7 @@ const About = ({ isMaximized }) => {
               combine my technical expertise with my creative vision.
             </p>
             <p className=" pt-6">
-              I prefer bikes over cars, as it gives me a sense of freedom and a
-              closer connection to my surroundings.I am constantly learning and
-              exploring new technologies to stay up-to-date with the latest
+              I am constantly learning and exploring new technologies to stay up-to-date with the latest
               trends in web development. Lastly, I am a huge fan of working with
               like-minded individuals, as collaboration fuels my creativity and
               helps me grow both personally and professionally.
