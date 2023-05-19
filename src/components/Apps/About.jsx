@@ -7,7 +7,7 @@ const About = ({ isMaximized }) => {
     <div className=" flex flex-col gap-[35px] px-[70px] py-[30px] h-full overflow-y-auto">
       <div className={`flex gap-10 justify-start`}>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-01.appspot.com/o/profilePic.png?alt=media&token=35428e3a-2149-4d35-a26c-c3f5741d7dab"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-01.appspot.com/o/profilePic.png?alt=media&token=547e273e-e882-4af5-a18c-4f7204c4a925"
           alt="profilePhoto"
           className=" border-s-[2px] border-s-[#fafafa] border-t-[2px] border-t-[#fafafa] border-black border-[1px] w-[220px]"
         />
