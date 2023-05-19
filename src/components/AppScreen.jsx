@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import AppScreenFrame from "./AppScreenFrame";
+import AppScreenFrame from "./UI/AppScreenFrame";
 import { Menu } from "../content/menu";
 import AppContext from "../context/AppContext";
 import About from "./Apps/About";
+import Mail from "./Apps/Mail";
 
 const AppScreen = () => {
   const { state } = useContext(AppContext);
@@ -39,7 +40,7 @@ const AppScreen = () => {
           isMaximized={state.Mail.fullscreen}
           isMinimized={state.Mail.minimize}
         >
-          <h1>Mail Content</h1>
+          <Mail />
         </AppScreenFrame>
       )}
     </>

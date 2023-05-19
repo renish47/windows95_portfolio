@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from "react";
-import AppContext from "../context/AppContext";
+import AppContext from "../../context/AppContext";
 import { motion, useDragControls } from "framer-motion";
 
 const AppScreenFrame = ({
@@ -77,7 +77,7 @@ const AppScreenFrame = ({
       <motion.div
         className={
           className +
-          `w-full   ${
+          `w-full relative   ${
             isMaximized ? " appContentHeightInMax" : "appContentHeightInMin"
           }`
         }
