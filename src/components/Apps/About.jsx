@@ -7,7 +7,7 @@ const About = ({ isMaximized }) => {
     <div className=" flex flex-col gap-[35px] px-[70px] py-[30px] h-full overflow-y-auto">
       <div className={`flex gap-10 justify-start`}>
         <img
-          src="/assets/profilePic.png"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-assets-01.appspot.com/o/profilePic.png?alt=media&token=35428e3a-2149-4d35-a26c-c3f5741d7dab"
           alt="profilePhoto"
           className=" border-s-[2px] border-s-[#fafafa] border-t-[2px] border-t-[#fafafa] border-black border-[1px] w-[220px]"
         />
@@ -72,12 +72,11 @@ const About = ({ isMaximized }) => {
               combine my technical expertise with my creative vision.
             </p>
             <p className=" pt-6">
-              I prefer bikes over cars, as it gives me a sense of freedom and a
-              closer connection to my surroundings.I am constantly learning and
-              exploring new technologies to stay up-to-date with the latest
-              trends in web development. Lastly, I am a huge fan of working with
-              like-minded individuals, as collaboration fuels my creativity and
-              helps me grow both personally and professionally.
+              I am constantly learning and exploring new technologies to stay
+              up-to-date with the latest trends in web development. Lastly, I am
+              a huge fan of working with like-minded individuals, as
+              collaboration fuels my creativity and helps me grow both
+              personally and professionally.
               <span
                 className={`text-blue-500 ps-3 cursor-pointer ${
                   !seeMore ? "hidden" : ""
