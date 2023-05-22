@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import AppContext from "../../context/AppContext";
+import { isMobileDevice } from "../../util/IsMobileDevice";
 
 const Icon = ({ menu, setAppSelected }) => {
   const { state, openApp } = useContext(AppContext);
-  let details = navigator.userAgent;
-  let regexp = /android|iphone|kindle|ipad/i;
-  let isMobileDevice = regexp.test(details);
 
   return (
     <motion.div
