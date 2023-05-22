@@ -4,6 +4,7 @@ import { Menu } from "../content/menu";
 import AppContext from "../context/AppContext";
 import About from "./Apps/About";
 import Mail from "./Apps/Mail";
+import Projects from "./Apps/Projects";
 
 const AppScreen = () => {
   const { state } = useContext(AppContext);
@@ -29,7 +30,7 @@ const AppScreen = () => {
           isMaximized={state.Projects.fullscreen}
           isMinimized={state.Projects.minimize}
         >
-          <h1>Projects Content</h1>
+          <Projects isMaximized={state.Projects.fullscreen} />
         </AppScreenFrame>
       )}
       {state.Mail.open && (

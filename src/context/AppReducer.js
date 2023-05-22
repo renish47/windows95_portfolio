@@ -41,13 +41,16 @@ const AppReducer = (state, action) => {
             let alteredStack = state.taskbarAppStack.filter(app => app != appName)
             if (!alteredStack.includes(prev))
                 prev = alteredStack.slice(-1)
+            let topValue;
+            if (prev !== '')
+                topValue = state[prev].minimize === true ? false : true;
             return {
                 ...state,
                 taskbarAppStack: alteredStack,
                 previouslyActiveApp: prev,
                 [prev]: {
                     ...state[prev],
-                    top: state[appName].fullscreen ? false : true,
+                    top: topValue,
                 },
                 [appName]: {
                     open: false,
@@ -98,5 +101,6 @@ const AppReducer = (state, action) => {
             return state;
     }
 }
+
 
 export default AppReducer;
