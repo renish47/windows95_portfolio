@@ -5,7 +5,7 @@ const Projects = ({ isMaximized }) => {
   return (
     <div
       className={`flex flex-col gap-5 p-4 w-full h-[100%] overflow-y-scroll ${
-        isMaximized ? "pb-[100px] sm:pb-0" : ""
+        isMaximized ? "pb-[100px] sm:pb-[50px]" : ""
       }`}
     >
       {projects.map((project, i) => {

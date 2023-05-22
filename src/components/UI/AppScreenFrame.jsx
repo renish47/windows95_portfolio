@@ -20,7 +20,7 @@ const AppScreenFrame = ({
   }
   return (
     <motion.div
-      className={`absolute bg-[#c0c0c0] border-b-[#5a5a5a] border-b-[1px] border-x-[#5a5a5a] border-x-[1px] border-t-[#fafafa] border-t-[2px] p-[2px] ${
+      className={`absolute bg-[#c0c0c0] border-b-[#5a5a5a] border-b-[1px] border-x-[#5a5a5a] border-x-[1px] border-t-[#fafafa] border-t-[2px] p-[2px] max-h-[500px]  ${
         appInfo.name === "About" && !isMaximized ? "-ms-5 -mt-5" : ""
       } ${appInfo.name === "Mail" && !isMaximized ? "ms-5 mt-5" : ""} ${
         isActive ? "z-50" : isMinimized ? "-z-50" : "z-10"
