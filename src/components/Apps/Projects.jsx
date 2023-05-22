@@ -3,7 +3,11 @@ import { projects } from "../../content/projects";
 
 const Projects = ({ isMaximized }) => {
   return (
-    <div className=" flex flex-col gap-5 p-4 w-full h-[100%] overflow-y-scroll">
+    <div
+      className={`flex flex-col gap-5 p-4 w-full h-[100%] overflow-y-scroll ${
+        isMaximized ? "pb-[100px] sm:pb-0" : ""
+      }`}
+    >
       {projects.map((project, i) => {
         return (
           <div
@@ -18,7 +22,9 @@ const Projects = ({ isMaximized }) => {
               />
               <div className=" sm:flex hidden m-3 mx-auto gap-2 flex-wrap justify-center">
                 {project.techStack.map((tech, i) => {
-                  return <img src={tech} alt="badges" className="h-[23px]" />;
+                  return (
+                    <img src={tech} key={i} alt="badges" className="h-[23px]" />
+                  );
                 })}
               </div>
             </div>
@@ -28,7 +34,9 @@ const Projects = ({ isMaximized }) => {
               <p className=" text-sm">{project.description}</p>
               <div className=" sm:hidden flex m-3 mx-auto gap-2 flex-wrap justify-center">
                 {project.techStack.map((tech, i) => {
-                  return <img src={tech} alt="badges" className="h-[25px]" />;
+                  return (
+                    <img key={i} src={tech} alt="badges" className="h-[25px]" />
+                  );
                 })}
               </div>
               <div className="mt-2 flex justify-center sm:justify-end gap-5">

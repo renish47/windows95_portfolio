@@ -4,7 +4,11 @@ import { badges } from "../../content/badges";
 const About = ({ isMaximized }) => {
   const [seeMore, setSeeMore] = useState(false);
   return (
-    <div className=" flex flex-col gap-[35px] px-5 sm:px-[70px] py-[30px] h-full overflow-y-auto">
+    <div
+      className={`flex flex-col gap-[35px] px-5 sm:px-[70px] py-[30px]  h-full overflow-y-auto ${
+        isMaximized ? "pb-[100px] sm:pb-0" : ""
+      }`}
+    >
       <div
         className={`flex sm:flex-row flex-col sm:gap-10 items-center sm:items-start justify-start`}
       >

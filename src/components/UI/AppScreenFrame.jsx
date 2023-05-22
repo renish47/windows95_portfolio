@@ -38,7 +38,7 @@ const AppScreenFrame = ({
       <div
         className=" flex items-center bg-[#000080] justify-between min-w-[min-content] p-[3px] sm:h-[36px] h-[40px] sm:touch-auto touch-none"
         onPointerDown={startDrag}
-        onTouchStart={startDrag}
+        onTouchMove={startDrag}
       >
         <div className="flex justify-start gap-[5px] p-[5px] text-white w-full h-full">
           <img
@@ -91,7 +91,7 @@ const AppScreenFrame = ({
       <motion.div
         className={
           className +
-          `w-full relative   ${
+          `w-full relative  ${
             isMaximized ? " appContentHeightInMax" : "appContentHeightInMin"
           }`
         }

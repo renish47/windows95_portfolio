@@ -12,7 +12,7 @@ const StartMenu = ({ setCloseStartMenu }) => {
       />
       <div
         aria-label="startMenu"
-        className=" flex z-[999] h-[40vh] w-[200px] bg-[#fff] border-t-[#fff]  border-b-[grey] border-s-[#fff] border-[1px] border-e-0 p-[2px] absolute left-[2px] bottom-[36px]"
+        className=" flex z-[999] h-[300px] w-[200px] bg-[#fff] border-t-[#fff]  border-b-[grey] border-s-[#fff] border-[1px] border-e-0 p-[2px] absolute left-[2px] bottom-[36px]"
       >
         <div
           className=" w-[25px] h-full flex items-end bg-[#7b7d7b]"
