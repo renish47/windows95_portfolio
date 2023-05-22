@@ -21,11 +21,12 @@ const AppScreenFrame = ({
   return (
     <motion.div
       className={`absolute bg-[#c0c0c0] border-b-[#5a5a5a] border-b-[1px] border-x-[#5a5a5a] border-x-[1px] border-t-[#fafafa] border-t-[2px] p-[2px] ${
-        isActive ? "z-50" : isMinimized ? "-z-50" : "z-10"
-      } ${
-        isMaximized
+        (appInfo.name === "Projects" ? " ms-5 mt-5 " : "") +
+        (appInfo.name === "Mail" ? " ms-10 mt-10 " : "") +
+        (isActive ? "z-50" : isMinimized ? "-z-50" : "z-10") +
+        (isMaximized
           ? "appMaximized"
-          : " w-[80%] sm:w-[600px] h-[60vh] sm:h-[75vh]"
+          : " w-[80%] sm:w-[600px] h-[60vh] sm:h-[75vh]")
       }`}
       ref={mainDivRef}
       drag
