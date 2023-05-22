@@ -6,7 +6,7 @@ const Projects = ({ isMaximized }) => {
     <div className=" flex flex-col gap-5 p-4 w-full h-[100%] overflow-y-scroll">
       {projects.map((project, i) => {
         return (
-          <div className=" flex gap-7 bg-[#ffffff44] w-full p-4" key={i}>
+          <div className=" flex gap-7 bg-[#eaeaeaaf] w-full p-4" key={i}>
             <div className=" flex flex-col w-1/2 items-center">
               <img
                 src={project.imagePath}

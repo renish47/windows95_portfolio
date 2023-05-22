@@ -14,7 +14,7 @@ export const projects = [
         description: "A Doctor appointment booking app which provides functionalities to book and manage appointments. This is my first Full-Stack project",
         githubLink: "https://github.com/renish47/BookMyDoc",
         websiteLink: "https://bookmydoc.netlify.app/",
-        techStack: [react, expressJs, mongoDb, bootstrap]
+        techStack: [react, bootstrap, expressJs, mongoDb]
     },
     {
         name: "Portfolio",

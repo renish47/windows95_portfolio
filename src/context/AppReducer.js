@@ -42,7 +42,7 @@ const AppReducer = (state, action) => {
             if (!alteredStack.includes(prev))
                 prev = alteredStack.slice(-1)
             let topValue;
-            if (prev !== '')
+            if (prev.length > 0)
                 topValue = state[prev].minimize === true ? false : true;
             return {
                 ...state,
