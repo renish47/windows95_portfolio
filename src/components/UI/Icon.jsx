@@ -4,13 +4,17 @@ import AppContext from "../../context/AppContext";
 
 const Icon = ({ menu, setAppSelected }) => {
   const { state, openApp } = useContext(AppContext);
+  let details = navigator.userAgent;
+  let regexp = /android|iphone|kindle|ipad/i;
+  let isMobileDevice = regexp.test(details);
+
   return (
     <motion.div
       aria-label={menu.name}
       tabIndex="-1"
       className={`flex flex-col items-center z-10  focus-within:bg-[rgba(50,94,160,0.56)]
                 ${menu.name === "Projects" && "gap-[10px]"}`}
-      drag
+      drag={isMobileDevice ? false : true}
       dragMomentum={false}
       dragElastic={0.1}
       //   onContextMenu={(event) => {
