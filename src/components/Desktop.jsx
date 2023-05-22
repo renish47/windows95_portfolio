@@ -8,7 +8,7 @@ const Desktop = () => {
     <>
       <div className="w-screen h-screen bg-transparent">
         <div className=" w-screen h-screen flex justify-center items-center -z-10 flex-col bg-[#008080] overflow-hidden">
-          <div className="flex flex-col gap-6 absolute justify-start z-10 top-[3%] left-[2%]">
+          <div className="flex flex-col gap-7 sm:gap-6 absolute justify-start z-10 top-[3%] left-[4%] sm:left-[2%]">
             {Menu.map((menu, i) => {
               return <Icon key={i} menu={menu} />;
             })}
