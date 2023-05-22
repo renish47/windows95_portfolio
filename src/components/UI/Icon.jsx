@@ -22,6 +22,9 @@ const Icon = ({ menu, setAppSelected }) => {
       onDoubleClick={(e) => {
         if (state[menu.name].open !== true) openApp(menu.name);
       }}
+      onTouchStart={(e) => {
+        if (state[menu.name].open !== true) openApp(menu.name);
+      }}
     >
       <img
         src={menu.path}

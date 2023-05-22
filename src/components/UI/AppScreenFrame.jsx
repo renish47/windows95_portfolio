@@ -22,7 +22,11 @@ const AppScreenFrame = ({
     <motion.div
       className={`absolute bg-[#c0c0c0] border-b-[#5a5a5a] border-b-[1px] border-x-[#5a5a5a] border-x-[1px] border-t-[#fafafa] border-t-[2px] p-[2px] ${
         isActive ? "z-50" : isMinimized ? "-z-50" : "z-10"
-      } ${isMaximized ? "appMaximized" : "w-[600px] h-[75vh]"}`}
+      } ${
+        isMaximized
+          ? "appMaximized"
+          : " w-[80%] sm:w-[600px] h-[60vh] sm:h-[75vh]"
+      }`}
       ref={mainDivRef}
       drag
       dragMomentum={false}
@@ -32,8 +36,9 @@ const AppScreenFrame = ({
       onPointerDown={() => activeApp(appInfo.name)}
     >
       <div
-        className=" flex items-center bg-[#000080] justify-between min-w-[min-content] p-[3px] h-[36px]"
+        className=" flex items-center bg-[#000080] justify-between min-w-[min-content] p-[3px] sm:h-[36px] h-[40px] sm:touch-auto touch-none"
         onPointerDown={startDrag}
+        onTouchStart={startDrag}
       >
         <div className="flex justify-start gap-[5px] p-[5px] text-white w-full h-full">
           <img
@@ -45,32 +50,41 @@ const AppScreenFrame = ({
         </div>
         <div className="flex">
           <button
-            className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center h-[22px] w-[18px] hover:bg-[#dedddd]"
+            className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center sm:h-[22px] sm:w-[18px] h-[24px] w-[22px] hover:bg-[#dedddd]"
             style={{ borderStyle: "outset" }}
             onClick={() => {
               minimizeApp(appInfo.name);
             }}
           >
-            <img src="/assets/minimize.svg" alt="minimizeButton" />
+            <img
+              src="/assets/minimize.svg"
+              alt="minimizeButton"
+              className=" sm:w-min w-[10px]"
+            />
           </button>
           <button
-            className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center h-[22px] w-[18px] hover:bg-[#dedddd]"
+            className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center sm:h-[22px] sm:w-[18px] h-[24px] w-[22px] hover:bg-[#dedddd]"
             style={{ borderStyle: "outset" }}
             onClick={() => toggleFullScreen(appInfo.name)}
           >
             <img
               src={isMaximized ? "/assets/restore.svg" : "/assets/maximize.svg"}
               alt="maximizeButton"
+              className=" sm:w-min w-[10px]"
             />
           </button>
           <button
-            className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center h-[22px] w-[18px] hover:bg-[#dedddd]"
+            className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center sm:h-[22px] sm:w-[18px] h-[24px] w-[22px] hover:bg-[#dedddd]"
             style={{ borderStyle: "outset" }}
             onClick={() => {
               closeApp(appInfo.name);
             }}
           >
-            <img src="/assets/close.svg" alt="closeButton" />
+            <img
+              src="/assets/close.svg"
+              alt="closeButton"
+              className=" sm:w-min w-[10px]"
+            />
           </button>
         </div>
       </div>

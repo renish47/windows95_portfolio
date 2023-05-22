@@ -9,7 +9,7 @@ const TaskbarAppBtn = ({
 }) => {
   return (
     <button
-      className={`w-[130px] text-[13px] max-w-[130px] h-[26px] mt-[3px] mb-[5px] leading-[14px] overflow-hidden text-black p-[2px] ms-[1px] flex justify-start items-center gap-[10px] border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] cursor-default 
+      className={` w-fit sm:w-[130px] text-[13px] max-w-[130px] h-[30px] sm:h-[26px] mt-[3px] mb-[5px] leading-[14px] overflow-hidden text-black p-[2px] ms-[1px] flex justify-start items-center gap-[10px] border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] cursor-default 
               ${isActive && "BtnClicked"}`}
       style={{ boxShadow: "0.5px 0.5px #000" }}
       onClick={() => {
@@ -20,9 +20,11 @@ const TaskbarAppBtn = ({
       <img
         src={iconSrc}
         alt={appName + "Icon"}
-        className=" w-[18px] h-[18px]"
+        className={`${
+          appName === "About" ? "w-[25px] h-[25px]" : "w-[22px] h-[22px]"
+        } sm:w-[18px] sm:h-[18px]`}
       />
-      <span>{appName}</span>
+      <span className=" hidden sm:inline-block">{appName}</span>
     </button>
   );
 };

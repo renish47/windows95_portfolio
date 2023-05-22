@@ -41,7 +41,7 @@ const AppScreen = () => {
           isMaximized={state.Mail.fullscreen}
           isMinimized={state.Mail.minimize}
         >
-          <Mail />
+          <Mail isMaximized={state.Mail.fullscreen} />
         </AppScreenFrame>
       )}
     </>

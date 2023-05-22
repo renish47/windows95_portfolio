@@ -33,7 +33,7 @@ const StartMenu = ({ setCloseStartMenu }) => {
               return (
                 <li
                   key={i}
-                  className=" cursor-pointer flex gap-2 justify-start p-[3px] h-[38px] border-b-[1px] border-b-white hover:bg-[#dedede] hover:border-b-black"
+                  className=" cursor-pointer flex gap-2 justify-start items-center p-[3px] h-[38px] border-b-[1px] border-b-white hover:bg-[#dedede] hover:border-b-black"
                   onClick={() => {
                     if (state[app.name].open !== true) openApp(app.name);
                     setCloseStartMenu((prev) => !prev);
@@ -44,7 +44,9 @@ const StartMenu = ({ setCloseStartMenu }) => {
                     alt={app.name + "Icon"}
                     className={app.startIconSize}
                   />
-                  <span className="text-[13px]">{app.name}</span>
+                  <span className="text-[15px] sm:text-[13px] pt-[1px]">
+                    {app.name}
+                  </span>
                 </li>
               );
             })}
@@ -55,7 +57,7 @@ const StartMenu = ({ setCloseStartMenu }) => {
               alt="ShutdownIcon"
               className=" w-[25px] h-[25px]"
             />
-            <span className="text-[13px]">Shut Down...</span>
+            <span className="text-[14px] sm:text-[13px]">Shut Down...</span>
           </div>
         </div>
       </div>

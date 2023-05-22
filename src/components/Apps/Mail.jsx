@@ -1,17 +1,15 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const Mail = () => {
+const Mail = ({ isMaximized }) => {
   const form = useRef();
   const [notify, setNotify] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(<></>);
 
   const submitHandler = (e) => {
-    console.log("hi");
     e.preventDefault();
     const input = form.current;
-    console.log(input.email.value.includes("@"));
 
     if (
       !input.email.value.includes("@") ||
@@ -58,7 +56,9 @@ const Mail = () => {
   return (
     <>
       <form
-        className=" flex flex-col gap-[5px] h-full w-full overflow-y-auto"
+        className={`flex flex-col gap-[5px] h-full w-full overflow-y-auto ${
+          isMaximized ? " px-1" : ""
+        }`}
         onSubmit={submitHandler}
         ref={form}
       >
@@ -113,7 +113,7 @@ const Mail = () => {
           id="message"
           placeholder="your message"
           required
-          className=" text-[16px] min-h-[50%] p-[5px] m-[2px] border-black border-[0.5px]"
+          className=" text-[16px] min-h-[50%] p-[5px] ps-[10px]  m-[2px] bg-white border-b-[2px] border-b-[#4d4c4c]"
         ></textarea>
 
         <span className="border-b-[grey] border-b-[1px] flex justify-center " />

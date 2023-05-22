@@ -47,10 +47,10 @@ const Taskbar = () => {
   return (
     <>
       {isStartClicked && <StartMenu setCloseStartMenu={setIsStartClicked} />}
-      <div className="fixed bottom-0 left-0 w-screen h-[35px] bg-[#c0c0c0] border-t-2 border-[#fafafa] border-solid p-[5px] z-[100] flex justify-between items-center overflow-hidden">
+      <div className="fixed bottom-0 left-0 w-screen h-[40px] sm:h-[35px] bg-[#c0c0c0] border-t-2 border-[#fafafa] border-solid p-[5px] z-[100] flex justify-between items-center overflow-hidden">
         <div className="flex items-center justify-center gap-[5px] p-1">
           <button
-            className={`flex items-center justify-center bg-inherit border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] w-[80px] text-[13px] p-1 gap-1  h-[28px] cursor-default
+            className={`flex items-center justify-center bg-inherit border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] w-[80px] text-[15px] sm:text-[13px] p-1 gap-1  h-[32px] sm:h-[28px] cursor-default
             ${isStartClicked && "BtnClicked"}`}
             style={{ boxShadow: "0.5px 0.5px #000" }}
             onClick={() => {
@@ -69,7 +69,7 @@ const Taskbar = () => {
         </div>
         <div
           className="flex items-center justify-center border-t-[#5a5a5a] border-e-[#fafafa] border-b-[#fafafa] border-s-[#5a5a5a] border-[1.5px] gap-[5px]
-       h-[25px] m-[1px] w-[80px] cursor-default"
+       sm:h-[25px] h-[28px] m-[1px] w-[80px] cursor-default"
         >
           <img
             src="/assets/speakers.png"

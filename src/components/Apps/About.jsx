@@ -4,14 +4,16 @@ import { badges } from "../../content/badges";
 const About = ({ isMaximized }) => {
   const [seeMore, setSeeMore] = useState(false);
   return (
-    <div className=" flex flex-col gap-[35px] px-[70px] py-[30px] h-full overflow-y-auto">
-      <div className={`flex gap-10 justify-start`}>
+    <div className=" flex flex-col gap-[35px] px-5 sm:px-[70px] py-[30px] h-full overflow-y-auto">
+      <div
+        className={`flex sm:flex-row flex-col sm:gap-10 items-center sm:items-start justify-start`}
+      >
         <img
           src="/assets/profilePic.png"
           alt="profilePhoto"
-          className=" border-s-[2px] border-s-[#fafafa] border-t-[2px] border-t-[#fafafa] border-black border-[1px] w-[220px]"
+          className="border-s-[2px] border-s-[#fafafa] border-t-[2px] border-t-[#fafafa] border-black border-[1px] w-[220px]"
         />
-        <div className=" flex flex-col gap-1 mt-14">
+        <div className=" flex flex-col sm:items-start items-center  gap-1 mt-4 sm:mt-14">
           <h2
             className={` font-extrabold ${
               isMaximized ? " text-[40px]" : "text-[30px]"
@@ -36,7 +38,7 @@ const About = ({ isMaximized }) => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-1 justify-center sm:justify-start">
         {badges.map((url, i) => {
           return <img src={url} alt="badge" key={i} />;
         })}
@@ -51,7 +53,7 @@ const About = ({ isMaximized }) => {
           development, I enjoy creating seamless and dynamic experiences for
           users.
           <span
-            className={`text-blue-500 ps-3 cursor-pointer ${
+            className={`text-blue-500 ps-2 cursor-pointer ${
               seeMore ? "hidden" : ""
             }`}
             onClick={() => setSeeMore((prev) => !prev)}
@@ -72,19 +74,16 @@ const About = ({ isMaximized }) => {
               combine my technical expertise with my creative vision.
             </p>
             <p className=" pt-6">
-              I prefer bikes over cars, as it gives me a sense of freedom and a
-              closer connection to my surroundings.I am constantly learning and
-              exploring new technologies to stay up-to-date with the latest
-              trends in web development. Lastly, I am a huge fan of working with
-              like-minded individuals, as collaboration fuels my creativity and
-              helps me grow both personally and professionally.
+              Lastly, I am a huge fan of working with like-minded individuals,
+              as collaboration fuels my creativity and helps me grow both
+              personally and professionally.
               <span
-                className={`text-blue-500 ps-3 cursor-pointer ${
+                className={`text-blue-500 ps-1 cursor-pointer ${
                   !seeMore ? "hidden" : ""
                 }`}
                 onClick={() => setSeeMore((prev) => !prev)}
               >
-                hide..
+                (hide)
               </span>
             </p>
           </>

@@ -25,7 +25,7 @@ const Clock = () => {
     }, 1000);
   }, []);
 
-  return <p className="text-[12px]">{currentTime}</p>;
+  return <p className="text-[13px] sm:text-[12px] pt-[1px]">{currentTime}</p>;
 };
 
 export default Clock;
