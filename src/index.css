@@ -10,6 +10,7 @@
 body {
   font-family: MS Sans;
   overflow: hidden;
+  cursor: default;
 }
 
 .BtnClicked {

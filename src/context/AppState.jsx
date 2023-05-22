@@ -32,7 +32,6 @@ const initialState = {
     fullscreen: false,
   },
   previouslyActiveApp: "",
-  CurrentActiveApp: "",
   taskbarAppStack: [],
 };
 
