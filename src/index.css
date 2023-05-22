@@ -11,6 +11,7 @@ body {
   font-family: MS Sans;
   overflow: hidden;
   cursor: default;
+  touch-action: none;
 }
 
 .BtnClicked {

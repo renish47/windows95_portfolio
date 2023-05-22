@@ -21,8 +21,8 @@ const AppScreenFrame = ({
   return (
     <motion.div
       className={`absolute bg-[#c0c0c0] border-b-[#5a5a5a] border-b-[1px] border-x-[#5a5a5a] border-x-[1px] border-t-[#fafafa] border-t-[2px] p-[2px] ${
-        appInfo.name === "Projects" && !isMaximized ? "ms-5 mt-5" : ""
-      } ${appInfo.name === "Mail" && !isMaximized ? "ms-10 mt-10" : ""} ${
+        appInfo.name === "About" && !isMaximized ? "-ms-5 -mt-5" : ""
+      } ${appInfo.name === "Mail" && !isMaximized ? "ms-5 mt-5" : ""} ${
         isActive ? "z-50" : isMinimized ? "-z-50" : "z-10"
       } ${
         isMaximized
@@ -41,7 +41,7 @@ const AppScreenFrame = ({
       <div
         className=" flex items-center bg-[#000080] justify-between min-w-[min-content] p-[3px] sm:h-[36px] h-[40px] sm:touch-auto touch-none"
         onPointerDown={startDrag}
-        onTouchMove={startDrag}
+        onTouchStart={startDrag}
       >
         <div className="flex justify-start gap-[5px] p-[5px] text-white w-full h-full">
           <img
