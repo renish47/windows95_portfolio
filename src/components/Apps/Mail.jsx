@@ -57,11 +57,7 @@ const Mail = ({ isMaximized }) => {
     <>
       <form
         className={`flex flex-col gap-[5px] h-full w-full overflow-y-auto ${
-          isMaximized
-            ? isMobileDevice
-              ? "pb-[100px] px-1"
-              : "pb-[100px] sm:pb-0 px-1"
-            : ""
+          isMaximized ? " px-1" : ""
         }`}
         onSubmit={submitHandler}
         ref={form}

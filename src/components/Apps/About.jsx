@@ -6,11 +6,7 @@ const About = ({ isMaximized }) => {
   return (
     <div
       className={`flex flex-col gap-[35px] px-5 sm:px-[70px] py-[30px]  h-full overflow-y-auto ${
-        isMaximized
-          ? isMobileDevice
-            ? "pb-[100px]"
-            : "pb-[100px] sm:pb-0"
-          : ""
+        isMaximized ? "pb-[100px] sm:pb-0" : ""
       }`}
     >
       <div
