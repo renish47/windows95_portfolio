@@ -27,7 +27,7 @@ const AppScreenFrame = ({
       } ${
         isMaximized
           ? "appMaximized"
-          : "w-[80%] sm:w-[600px] h-[60vh] sm:h-[75vh] max-h-[500px] "
+          : "w-[80%] sm:w-[600px] h-[60vh] sm:h-[75vh] max-h-[600px] "
       }
       `}
       ref={mainDivRef}
