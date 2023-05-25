@@ -27,7 +27,7 @@ const AppScreenFrame = ({
       } ${
         isMaximized
           ? "appMaximized"
-          : "w-[80%] sm:w-[600px] h-[60vh] sm:h-[75vh] max-h-[600px] "
+          : "w-[80%] sm:w-[600px] h-[60vh] sm:h-[75vh] max-h-[590px] "
       }
       `}
       ref={mainDivRef}
@@ -56,6 +56,7 @@ const AppScreenFrame = ({
             className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center sm:h-[22px] sm:w-[18px] h-[24px] w-[22px] hover:bg-[#dedddd]"
             style={{ borderStyle: "outset" }}
             onClick={() => {
+              // new Audio("../../../public/assets/sounds/minimize.mp3").play();
               minimizeApp(appInfo.name);
             }}
           >
@@ -68,7 +69,10 @@ const AppScreenFrame = ({
           <button
             className=" min-h-[14px] min-w-[16px] p-0 cursor-default bg-white border-[#aeaeae] border-[1.5px] rounded-[12%] flex justify-center items-center sm:h-[22px] sm:w-[18px] h-[24px] w-[22px] hover:bg-[#dedddd]"
             style={{ borderStyle: "outset" }}
-            onClick={() => toggleFullScreen(appInfo.name)}
+            onClick={() => {
+              // new Audio("../../../public/assets/sounds/maximize.mp3").play();
+              toggleFullScreen(appInfo.name);
+            }}
           >
             <img
               src={isMaximized ? "/assets/restore.svg" : "/assets/maximize.svg"}

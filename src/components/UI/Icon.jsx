@@ -22,6 +22,7 @@ const Icon = ({ menu, setAppSelected }) => {
       //     setTopVal(res.top);
       //   }}
       onDoubleClick={(e) => {
+        // new Audio("../../../public/assets/sounds/open.mp3").play();
         if (state[menu.name].open !== true) openApp(menu.name);
       }}
       onTouchStart={(e) => {
