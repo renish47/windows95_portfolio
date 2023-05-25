@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { badges } from "../../content/badges";
+import resumeUrl from "../../../public/assets/Resume/Renishkar_Resume.pdf";
 
 const About = ({ isMaximized }) => {
   const [seeMore, setSeeMore] = useState(false);
@@ -95,7 +96,7 @@ const About = ({ isMaximized }) => {
         <div className=" flex justify-center">
           <a
             target="_blank"
-            href="../../../public/assets/Resume/Renishkar_Resume.pdf"
+            href={resumeUrl}
             download
             className=" flex mt-10 w-fit justify-center items-center gap-[5px] p-[5px] text-sm border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] hover:border-e-[#dfdfdf]  hover:border-s-[grey]  hover:border-t-[grey] hover:border-b-[#dfdfdf] hover:bg-[#b5b5b5] transition-all "
           >
