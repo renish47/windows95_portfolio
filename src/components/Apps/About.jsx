@@ -92,6 +92,15 @@ const About = ({ isMaximized }) => {
             </p>
           </>
         )}
+        <div className=" flex justify-center">
+          <a
+            href="/assets/Resume/Renishkar_Resume.pdf"
+            download="/assets/Resume/Renishkar_Resume.pdf"
+            className=" flex mt-10 w-fit justify-center items-center gap-[5px] p-[5px] text-sm border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] hover:border-e-[#dfdfdf]  hover:border-s-[grey]  hover:border-t-[grey] hover:border-b-[#dfdfdf] hover:bg-[#b5b5b5] transition-all "
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
   );
