@@ -31,7 +31,7 @@ const About = ({ isMaximized }) => {
               isMaximized ? " text-[25px]" : "text-[16px]"
             }`}
           >
-            Full Stack Development
+            Full Stack Developer
           </h2>
           <h4
             className={` text-red-700 ${
