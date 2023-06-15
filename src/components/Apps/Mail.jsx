@@ -121,7 +121,8 @@ const Mail = ({ isMaximized }) => {
         <div className=" flex justify-center m-[5px] p-[5px] pb-[10px]">
           <button
             type="submit"
-            className=" flex justify-center items-center w-[100px] gap-[5px] p-[5px] h-[30px] border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] "
+            className=" flex justify-center items-center w-[100px] gap-[5px] p-[5px] h-[30px] border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] disabled:opacity-70 "
+            disabled={isLoading}
           >
             {/* <img
               src="/assets/mail.png"
@@ -129,10 +130,7 @@ const Mail = ({ isMaximized }) => {
               className=" h-[25px] w-[25px] "
             /> */}
             {isLoading ? (
-              <div
-                class="inline-block h-5 w-5 animate-spin rounded-full border-[3px] border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite] text-[grey]"
-                role="status"
-              />
+              <span className=" text-gray-600">Sending...</span>
             ) : (
               <span>Send</span>
             )}
