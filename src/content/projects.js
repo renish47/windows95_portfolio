@@ -19,7 +19,7 @@ export const projects = [
     {
         name: "url-sm",
         imagePath: "/assets/projectSnaps/project4a.jpg",
-        description: "In this project, I mainly focused on flow of processes like signin, signup, forget password along with OTP verification. Also this website helps to shortern your URL",
+        description: "A URL shortening website, which also implements the flow of processes like signin, signup, forget password along with OTP verification. This is one of my Mini project",
         githubLink: "https://github.com/renish47/url-sm",
         websiteLink: "https://url-sm.netlify.app/",
         techStack: [react, tailwindCss, expressJs, mongoDb]
