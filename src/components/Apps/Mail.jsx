@@ -121,7 +121,7 @@ const Mail = ({ isMaximized }) => {
         <div className=" flex justify-center m-[5px] p-[5px] pb-[10px]">
           <button
             type="submit"
-            className=" flex justify-center items-center w-[100px] gap-[5px] p-[5px] h-[30px] border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] disabled:opacity-70 "
+            className=" flex justify-center items-center w-[100px] gap-[5px] p-[5px] h-[30px] border-t-[#dfdfdf]  border-e-[grey]  border-b-[grey] border-s-[#dfdfdf] border-[2px] disabled:opacity-70"
             disabled={isLoading}
           >
             {/* <img

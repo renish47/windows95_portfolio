@@ -17,20 +17,20 @@ export const projects = [
         techStack: [react, bootstrap, expressJs, mongoDb]
     },
     {
-        name: "url-sm",
-        imagePath: "/assets/projectSnaps/project4a.jpg",
-        description: "A URL shortening website, which also implements the flow of processes like signin, signup, forget password along with OTP verification. This is one of my Mini project",
-        githubLink: "https://github.com/renish47/url-sm",
-        websiteLink: "https://url-sm.netlify.app/",
-        techStack: [react, tailwindCss, expressJs, mongoDb]
-    },
-    {
         name: "Portfolio",
         imagePath: "/assets/projectSnaps/project3a.jpg",
         description: "My web portfolio whose design is inspired based on popular Windows-95 operating system's look.",
         githubLink: "https://github.com/renish47/portfolio",
         websiteLink: "https://renishkar-portfolio.netlify.app/",
         techStack: [react, tailwindCss]
+    },
+    {
+        name: "url-sm",
+        imagePath: "/assets/projectSnaps/project4a.jpg",
+        description: "A URL shortening website, which also implements the flow of processes like signin, signup, forget password along with OTP verification. This is one of my Mini project",
+        githubLink: "https://github.com/renish47/url-sm",
+        websiteLink: "https://url-sm.netlify.app/",
+        techStack: [react, tailwindCss, expressJs, mongoDb]
     },
 
 ]

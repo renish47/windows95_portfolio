@@ -12,5 +12,5 @@ export const typescript = "https://img.shields.io/badge/-typescript-3178C6?logo=
 export const nextJs = "https://img.shields.io/badge/-next%20js-000000?logo=next.js&logoColor=white&style=for-the-badge"
 
 export const badges = [
-    html, css, js, react, nodeJs, expressJs, mongoDb, mySql, tailwindCss, bootstrap, typescript
+    html, css, js, react, nodeJs, expressJs, mongoDb, mySql, tailwindCss, bootstrap, typescript, nextJs
 ]
