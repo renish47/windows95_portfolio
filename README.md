@@ -1,6 +1,6 @@
 # Windows 95 Portfolio
 
-Welcome to the Windows 95-inspired responsive web portfolio GitHub repository! This project combines the nostalgic look of the Windows 95 operating system with modern web technologies, including React, Tailwind CSS, and Vite. It emulates the classic Windows 95 interface with draggable, resizable, and interactive windows with the help of Framer Motion. Additionally, it manages the global state using React's Context API and the useReducer hook.
+Welcome to the Windows 95-inspired responsive web portfolio GitHub repository! This project combines the nostalgic look of the Windows 95 operating system with modern web technologies, including React, Tailwind CSS, and Vite. It emulates the classic Windows 95 interface with draggable and interactive windows with the help of Framer Motion. Additionally, it manages the global state using React's Context API and the useReducer hook.
 
 ![project3b](https://github.com/renish47/windows95_portfolio/assets/107568859/1c7076e9-eb26-4da4-b182-4f8bfee85b0b)
 
@@ -52,6 +52,7 @@ The project is built using the following technologies:
 - React: A JavaScript library for building user interfaces.
 - Tailwind CSS: A utility-first CSS framework.
 - Vite: A fast development build tool.
+- Framer Motion: A production-ready motion library for React.
 
 ## Getting Started
 
